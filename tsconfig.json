@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+      "target": "es2021",
+      "jsx": "react-jsx",
+      "strict": true,
+      "baseUrl": "./src",
+      "allowJs": true,
+      "alwaysStrict": true,
+      "esModuleInterop": true,
+      "allowUnreachableCode": false,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitReturns": true,
+      "strictFunctionTypes": true,
+      "strictNullChecks": true,
+      "isolatedModules": true,
+      "moduleResolution": "node",
+      "types": [ "node", "@yandex/ymaps3-types" ],
+      "resolveJsonModule": true,
+  },
+  "include": ["src/**/*", "declaration.d.ts"],
+  "exclude": ["node_modules"]
+}

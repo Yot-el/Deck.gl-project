@@ -1,0 +1,86 @@
+.panel {
+  --border: #6590FF;
+  --accent: #3B57EA;
+  --text: #262222;
+  --background: #FFFFFF;
+
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  z-index: 1;
+  width: 300px;
+
+  color: var(--text);
+
+  background-color: var(--background);
+  border-radius: 5px;
+  border: 2px solid var(--border);
+}
+
+.title {
+  margin: 0;
+  color: var(--accent);
+  font-size: 32px;
+  font-family: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.weather-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-title {
+  margin: 0;
+  font-size: 20px;
+  font-family: inherit;
+  font-weight: 400;
+}
+
+.weather-title::first-letter {
+  text-transform: uppercase;
+}
+
+.temp-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.text {
+  margin: 0;
+
+  font-size: 16px;
+}
+
+.weather-property {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.loading-icon {
+  display: flex;
+  justify-content: center;
+  color: var(--accent);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  animation: rotateAnimation 2s infinite ease;
+}
+
+@keyframes rotateAnimation {
+  to {
+    transform: rotate(0deg);
+  }
+
+  from {
+    transform: rotate(360deg);
+  }
+}
